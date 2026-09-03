@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="80" y1="430" x2="430" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6D28FF"/>
+      <stop offset="0.5" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#27C9FF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Simple clean DataLens mark: NO circle, NO extra lines -->
+  <rect x="86" y="86" width="340" height="340" rx="82"
+        fill="#0B1020" stroke="url(#g)" stroke-width="18"/>
+
+  <!-- Centered analytics bars -->
+  <g fill="url(#g)" filter="url(#glow)">
+    <rect x="148" y="244" width="52" height="112" rx="14"/>
+    <rect x="230" y="188" width="52" height="168" rx="14"/>
+    <rect x="312" y="132" width="52" height="224" rx="14"/>
+  </g>
+</svg>

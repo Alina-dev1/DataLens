@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataLens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img class="logo_svg" src="images/logo.svg" alt="Logo">
+                <h1>DataLens</h1>
+            </div>
+            <ul class="nav_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#stats">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav_button">Get Started</button>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-dashboard">
+            <section class="hero">
+                <div class="hero_content">
+                    <span class="hero_badge">AI-Powered Data Analytics</span>
+                    <h1 class="hero_title">Turn Complex Data into Clear Insights</h1>
+                    <p class="hero_description">DataLens helps you analyze, understand your data effortlessly.Make
+                        better
+                        decisions with powerful AI insights.</p>
+                    <button class="hero_button1">Explore Features</button>
+                    <button class="hero_button2">Get Started</button>
+                    <button class="hero_button3">Watch Demo</button>
+                </div>
+            </section>
+            <section class="dashboard">
+                <div class="dashboard-header">
+                    <div>
+                        <h2>Data Overview</h2>
+                        <p>Track your data and discover useful insights.</p>
+                    </div>
+
+                    <button class="dashboard-button">View Report</button>
+                </div>
+                <div class="dashboard-cards">
+
+                    <div class="card">
+                        <p>Total Datasets</p>
+                        <h3 class="datasets-number">24</h3>
+                        <span>+12% this month</span>
+                    </div>
+
+                    <div class="card">
+                        <p>Total Records</p>
+                        <h3 class="records-number">12,450</h3>
+                        <span>+8.4% this month</span>
+                    </div>
+
+                    <div class="card">
+                        <p>Insights Found</p>
+                        <h3 class="insights-number">86%</h3>
+                        <span>+15% this month</span>
+                    </div>
+
+                    <div class="card">
+                        <p>Active Projects</p>
+                        <h3>7</h3>
+                        <span>3 updated today</span>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-middle">
+
+                    <div class="analytics-card">
+                        <div class="card-heading">
+                            <div>
+                                <h3>Analytics Overview</h3>
+                                <p>Data activity over time</p>
+                            </div>
+
+                            <select class="time-filter">
+                                <option>Last 7 days</option>
+                                <option>Last 30 days</option>
+                                <option>Last 3 months</option>
+                            </select>
+                        </div>
+
+                        <div class="graph" id="analyticsGraph"></div>
+
+                    </div>
+
+                    <div class="quality-card">
+
+                        <h3>Data Quality</h3>
+
+                        <div class="quality-score">
+                            <strong>92%</strong>
+                            <span>Excellent</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+
+                        <p>Keep going! Your datasets are looking healthy.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-bottom">
+
+                    <div class="activity-card">
+                        <h3>Recent Activity</h3>
+
+                        <div class="activity">
+                            <span>Dataset uploaded</span>
+                            <small>Customer Data</small>
+                        </div>
+
+                        <div class="activity">
+                            <span>Analysis completed</span>
+                            <small>Sales 2026</small>
+                        </div>
+
+                        <div class="activity">
+                            <span>New insight discovered</span>
+                            <small>Revenue trend</small>
+                        </div>
+                    </div>
+
+                    <div class="insights-card">
+                        <h3>Top Insights</h3>
+
+                        <div class="insight">
+                            <strong>Revenue increased by 18%</strong>
+                            <p>Compared with the previous month.</p>
+                        </div>
+
+                        <div class="insight">
+                            <strong>Customer activity peaked</strong>
+                            <p>Highest activity was recorded this month.</p>
+                        </div>
+
+                        <div class="insight">
+                            <strong>Data quality improved</strong>
+                            <p>Your dataset quality increased by 12%.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <section class="features" id="features">
+            <span class="feature-badge">FEATURES</span>
+            <div class="feature-header">
+                <h2>Everything You Need To Understand Your Data </h2>
+            </div>
+            <div class="feature-cards">
+
+                <div class="feature-card" data-feature="analytics">
+                    <div class="feature-card-inner">
+
+                        <img src="images/bar.svg" alt="Feature 1">
+                        <h3>Smart Analytics</h3>
+                        <p>Leverage AI algorithms to predict future trends and outcomes based on historical data.</p>
+                    </div>
+
+                </div>
+                <div class="feature-card" data-feature="visualization">
+                    <img src="images/analytics.svg" alt="Feature 2">
+                    <h3>Data Visualization</h3>
+                    <p>Transform your data into interactive visualizations for better understanding and decision-making
+                    </p>
+                </div>
+                <div class="feature-card" data-feature="processing">
+                    <img src="images/zap.svg" alt="Feature 3">
+                    <h3>Fast Processing</h3>
+                    <p>Process large datasets in seconds with our optimized analytics engine.</p>
+                </div>
+                <div class="feature-card" data-feature="security">
+                    <img src="images/private.svg" alt="Feature 4">
+                    <h3>Secure & Private</h3>
+                    <p>Your data is protected with enterprise-grade security measures.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="How-it-works" id="how-it-works">
+            <div class="howitworks-badge">
+                <span class="how-it-works-badge">How It Works</span>
+            </div>
+            <h2 class="howitworks-header">Get Insights in 3 Simple Steps</h2>
+            <div class="steps">
+                <div class="step" id="uploadStep">
+                    <div class="N">1</div>
+                    <img src="images/step1.svg" alt="Step 1">
+
+                    <div class="step-content" >
+                        <h3>Upload Data</h3>
+                        <p>Upload your datasets in various formats (CSV, Excel, JSON, etc.)</p>
+                    </div>
+                </div>
+
+                <div class="step" id="analyzeStep">
+                    <div class="N">
+                        2
+                    </div>
+                    <img src="images/step2.svg" alt="Step 2">
+
+                    <div class="step-content">
+                        <h3>Analyze with AI</h3>
+                        <p>Our AI algorithms analyze your data and generate insights.</p>
+                    </div>
+                </div>
+
+                <div class="step" id="exploreStep">
+                    <div class="N">
+                        3
+                    </div>
+                    <img src="images/step3.svg" alt="Step 3">
+
+                    <div class="step-content">
+                        <h3>Explore & Decide</h3>
+                        <p>View interactive visualizations and reports to make informed decisions.</p>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+             <input type="file" id="dataFile" accept=".csv" hidden>
+        <section class="Stats-section" id="stats">
+            <div class="stats">
+                <div class="stat">
+                    <img src="images/users.svg" alt="Datasets Analyzed">
+                    <h3>10K+</h3>
+                    <p>Datasets Analyzed</p>
+                </div>
+                <div class="stat">
+                    <img src="images/insights.svg" alt="Faster Insights">
+                    <h3>98%</h3>
+                    <p>Faster insights</p>
+                </div>
+                <div class="stat">
+                    <img src="images/happy.svg" alt="Happy Users">
+                    <h3>5k+</h3>
+                    <p>Happy Users</p>
+                </div>
+                <div class="stat">
+                    <img src="images/support.svg" alt="Support Available">
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </section>
+        <section class="CTA" id="contact">
+            <div class="cta container">
+                <h2>Ready to see Your Data Differently?</h2>
+                <p>Sign up today and start gaining valuable insights from your data.</p>
+                <input type="email" placeholder="Enter your email" class="cta__input">
+                <button class="cta__button">Get Started</button>
+                <p>no credit card required.</p>
+
+                <div class="cta-logo">
+                    <img src="images/logo.svg">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="Logo">
+                <h2>DataLens</h2>
+                <p>Making data easier for everyone to understand</p>
+
+                <div class="footer-socials">
+                    <img src="images/github logo.svg">
+                    <img src="images/linkedin logo.svg">
+                    <img src="images/twitter logo.svg">
+                    <img src="images/mail.svg">
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Product</h3>
+                <a href="#">Features</a>
+                <a href="#">How It Works</a>
+                <a href="#">Pricing</a>
+                <a href="#">Updates</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <a href="#">Documentation</a>
+                <a href="#">Tutorials</a>
+                <a href="#">Help Center</a>
+            </div>
+        </div>
+        <p class="footer__copyright">© 2026 DataLens. All rights reserved.</p>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
